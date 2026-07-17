@@ -173,14 +173,14 @@ const colorMap = {
 [t('shariaCompliant')]: "bg-purple-100 text-purple-800",
 [t('communityBased')]: "bg-orange-100 text-orange-800",
 [t('multilingual')]: "bg-pink-100 text-pink-800",
-[t('noCredit')]: "bg-teal-100 text-teal-800",
+[t('noCredit')]: "bg-emerald-100 text-emerald-800",
 [t('instant')]: "bg-yellow-100 text-yellow-800",
 [t('secure')]: "bg-gray-100 text-gray-800"
 };
 return colorMap[feature] || "bg-gray-100 text-gray-800";
 };
 return (
-<div className="min-h-screen bg-gradient-to-br from-teal-50 to-orange-50 p-4 md:p-8">
+<div className="min-h-screen bg-gradient-to-br from-emerald-50 to-orange-50 p-4 md:p-8">
 <div className="max-w-7xl mx-auto">
 {/* Header */}
 <div className="flex items-center gap-4 mb-8">
@@ -223,7 +223,7 @@ variant={selectedCategory === category.id ? "default" : "outline"}
 onClick={() => setSelectedCategory(category.id)}
 className={`flex items-center gap-2 whitespace-nowrap ${
 selectedCategory === category.id
-? "bg-gradient-to-r from-teal-600 to-teal-700 text-white"
+? "bg-gradient-to-r from-emerald-600 to-emerald-700 text-white"
 : ""
 }`}
 >
@@ -259,19 +259,19 @@ className={`${getFeatureBadgeColor(feature)} text-xs`}
 <div className="flex gap-2">
 {service.id === "remittance" ? (
 <Link to={createPageUrl("RemittanceServices")} className="flex-1">
-<Button size="sm" className="w-full bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800">
+<Button size="sm" className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800">
 {safeT('learnMore', 'Learn More')}
 </Button>
 </Link>
 ) : service.id === "gold-loans" ? (
 <Link to={createPageUrl("GoldLoans")} className="flex-1">
-<Button size="sm" className="w-full bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800">
+<Button size="sm" className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800">
 {safeT('learnMore', 'Learn More')}
 </Button>
 </Link>
 ) : (
 <Link to={createPageUrl(`ServiceDetails?service=${service.id}`)} className="flex-1">
-<Button size="sm" className="w-full bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800">
+<Button size="sm" className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800">
 {safeT('learnMore', 'Learn More')}
 </Button>
 </Link>
@@ -301,21 +301,21 @@ className="mt-4"
 </div>
 )}
 {/* CTA Section */}
-<div className="mt-12 bg-gradient-to-r from-teal-600 to-teal-700 rounded-2xl p-8 text-white text-center">
+<div className="mt-12 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-2xl p-8 text-white text-center">
 <h2 className="text-2xl font-bold mb-4">{safeT('personalizedRecommendationsTitle', 'Personalized Recommendations')}</h2>
 
 
-<p className="text-teal-100 mb-6 max-w-2xl mx-auto">
+<p className="text-emerald-100 mb-6 max-w-2xl mx-auto">
 {safeT('personalizedRecommendationsDesc', 'Get tailored financial services based on your profile and goals.')}
 </p>
 <div className="flex flex-col sm:flex-row gap-4 justify-center">
 <Link to={createPageUrl("AIAgent")}>
-<Button size="lg" className="bg-white text-teal-700 hover:bg-gray-100">
+<Button size="lg" className="bg-white text-emerald-700 hover:bg-gray-100">
 {safeT('talkToAIAgent', 'Talk to AI Agent')}
 </Button>
 </Link>
 <Link to={createPageUrl("StartJourney")}>
-<Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-teal-700">
+<Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-emerald-700">
 {safeT('createProfile', 'Create Profile')}
 </Button>
 </Link>

@@ -52,7 +52,7 @@ return (
 
 
 {/* Header section */}
-<div className="bg-gradient-to-r from-teal-800 to-teal-900 text-white p-8 md:p-12">
+<div className="bg-gradient-to-r from-emerald-800 to-emerald-900 text-white p-8 md:p-12">
 <div className="max-w-6xl mx-auto">
 <div className="flex items-center gap-4 mb-4">
 <Link to={createPageUrl("Home")}>
@@ -62,17 +62,17 @@ return (
 </Link>
 <h1 className="text-3xl md:text-4xl font-bold">{t('partnerWithUs')}</h1>
 </div>
-<p className="text-teal-200 text-lg max-w-3xl">{t('partnerDesc')}</p>
+<p className="text-emerald-200 text-lg max-w-3xl">{t('partnerDesc')}</p>
 </div>
 </div>
 {/* Features section */}
-<div className="bg-teal-50 py-16">
+<div className="bg-emerald-50 py-16">
 <div className="max-w-6xl mx-auto px-6">
 <h2 className={`text-3xl font-bold text-gray-900 mb-12 ${getTextAlign('center')}`}>{t('whyPartnerWithUs')}</h2>
 <div className="grid md:grid-cols-3 gap-8">
 {features.map((feature, index) => (
 <div key={index} className={`p-6 rounded-lg ${getTextAlign()}`}>
-<feature.icon className="w-12 h-12 text-teal-600 mb-4" />
+<feature.icon className="w-12 h-12 text-emerald-600 mb-4" />
 <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
 <p className="text-gray-600">{feature.description}</p>
 </div>
@@ -83,7 +83,7 @@ return (
 {/* Form section */}
 <div className="py-16">
 <div className="max-w-4xl mx-auto px-6">
-<Card className="shadow-xl border-t-4 border-teal-600">
+<Card className="shadow-xl border-t-4 border-emerald-600">
 <CardHeader>
 <CardTitle className="text-2xl">{t('partnershipInquiry')}</CardTitle>
 <p className="text-gray-600">{t('partnershipInquiryDesc')}</p>
@@ -118,7 +118,7 @@ return (
 {submitStatus === 'error' && (
 <p className="text-sm font-medium text-red-700 bg-red-50 rounded-lg p-3">Something went wrong submitting your inquiry. Please try again.</p>
 )}
-<Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-teal-600 to-teal-700 text-lg py-6">
+<Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700 text-lg py-6">
 <Send className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'}`} />
 {isSubmitting ? 'Submitting…' : t('submitInquiry')}
 </Button>

@@ -127,7 +127,7 @@ return (
 </Button>
 </Link>
 <div className="flex items-center gap-3">
-<div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-xl flex items-center justify-center">
+<div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl flex items-center justify-center">
 <DollarSign className="w-6 h-6 text-white" />
 </div>
 <div>
@@ -146,7 +146,7 @@ return (
 </CardHeader>
 <CardContent className="space-y-6">
 <div className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-<div className="w-10 h-10 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 text-white flex items-center justify-center">
+<div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 text-white flex items-center justify-center">
 <Gift className="w-5 h-5" />
 </div>
 <div className={getTextAlign('left')}>
@@ -215,7 +215,7 @@ return (
 <Badge className="bg-purple-100 text-purple-800">First month free</Badge>
 </div>
 <div className="flex justify-end">
-<Button onClick={handleStartTrial} className="bg-gradient-to-r from-teal-600 to-teal-700">
+<Button onClick={handleStartTrial} className="bg-gradient-to-r from-emerald-600 to-emerald-700">
 Start Free Month
 </Button>
 </div>
@@ -251,11 +251,11 @@ Prices are indicative based on current USD conversion.
 </div>
 {/* NEW: Profile creation CTA */}
 <div className="mt-10">
-<div className="rounded-2xl bg-gradient-to-r from-teal-600 to-emerald-600 p-6 md:p-8 text-white text-center">
+<div className="rounded-2xl bg-gradient-to-r from-emerald-600 to-green-600 p-6 md:p-8 text-white text-center">
 <h3 className="text-xl md:text-2xl font-bold mb-2">{safeT('unlockPersonalizedMatches', 'Unlock personalized matches')}</h3>
-<p className="text-teal-100 mb-5">{safeT('createProfileSubtitle', 'Create your profile to get tailored recommendations instantly.')}</p>
+<p className="text-emerald-100 mb-5">{safeT('createProfileSubtitle', 'Create your profile to get tailored recommendations instantly.')}</p>
 <Link to={startJourneyUrl}>
-<Button size="lg" className="bg-white text-teal-700 hover:bg-gray-100">
+<Button size="lg" className="bg-white text-emerald-700 hover:bg-gray-100">
 {safeT('createYourProfile', 'Create Your Profile')}
 </Button>
 </Link>
@@ -296,7 +296,7 @@ Prices are indicative based on current USD conversion.
 {submitted ? (
 <>
 <Link to={startJourneyUrl} className="w-full sm:w-auto">
-<Button className="w-full bg-gradient-to-r from-teal-600 to-teal-700">
+<Button className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700">
 {safeT('createProfileNow', 'Create Profile Now')}
 </Button>
 </Link>
@@ -309,7 +309,7 @@ Prices are indicative based on current USD conversion.
 {submitError && (
 <p className="text-sm text-red-600">{submitError}</p>
 )}
-<Button onClick={handleSubmit} disabled={isSubmitting} className="w-full bg-gradient-to-r from-teal-600 to-teal-700">
+<Button onClick={handleSubmit} disabled={isSubmitting} className="w-full bg-gradient-to-r from-emerald-600 to-emerald-700">
 {isSubmitting ? safeT('submitting', 'Submitting…') : safeT('confirmFreeTrial', 'Confirm Free Trial')}
 </Button>
 </div>
