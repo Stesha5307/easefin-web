@@ -1,0 +1,49 @@
+{
+"name": "GoldRate",
+"type": "object",
+"properties": {
+"country": {
+"type": "string",
+"enum": [
+"india",
+"pakistan",
+"bangladesh",
+"oman",
+"uae",
+"kuwait",
+"qatar",
+"bahrain",
+"saudi-arabia"
+],
+"description": "Country name in slug format"
+},
+"currency_code": {
+"type": "string",
+"description": "ISO currency code"
+},
+"rate_24k_per_gram": {
+"type": "number",
+"description": "24 karat gold price per gram in local currency"
+},
+"rate_22k_per_gram": {
+"type": "number",
+"description": "22 karat gold price per gram in local currency"
+},
+"rate_18k_per_gram": {
+"type": "number",
+"description": "18 karat gold price per gram in local currency"
+},
+"last_updated": {
+"type": "string",
+"format": "date",
+"description": "Date these values were last reviewed"
+}
+},
+"required": [
+"country",
+"currency_code",
+"rate_24k_per_gram",
+"rate_22k_per_gram",
+"rate_18k_per_gram"
+]
+}

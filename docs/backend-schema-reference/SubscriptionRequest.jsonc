@@ -1,0 +1,82 @@
+{
+"name": "SubscriptionRequest",
+"type": "object",
+"properties": {
+"name": {
+"type": "string",
+"description": "Requester full name"
+},
+"email": {
+"type": "string",
+"format": "email",
+"description": "Requester email"
+},
+"country": {
+"type": "string",
+
+
+
+"enum": [
+"india",
+"pakistan",
+"bangladesh",
+"oman",
+"uae",
+"kuwait",
+"qatar",
+"bahrain",
+"saudi-arabia"
+],
+"description": "Country selected for local currency display"
+},
+"currency_code": {
+"type": "string",
+"description": "Local currency code at time of request"
+},
+"payment_method": {
+"type": "string",
+"enum": [
+"card",
+"bank_transfer",
+"mobile_wallet"
+],
+"description": "Preferred payment method"
+},
+"plan": {
+"type": "string",
+"enum": [
+"basic"
+],
+"default": "basic",
+"description": "Plan identifier"
+},
+"monthly_price_usd": {
+"type": "number",
+"description": "USD monthly price at time of request"
+},
+"monthly_price_local": {
+"type": "number",
+"description": "Local currency monthly price at time of request"
+},
+"notes": {
+"type": "string",
+"description": "Optional notes from requester"
+},
+"status": {
+"type": "string",
+"enum": [
+"requested",
+"active",
+"cancelled"
+],
+"default": "requested"
+}
+},
+"required": [
+"email",
+"country",
+"payment_method",
+"plan",
+"monthly_price_usd"
+]
+}

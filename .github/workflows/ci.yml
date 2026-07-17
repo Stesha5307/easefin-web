@@ -1,0 +1,32 @@
+# .github/workflows/ci.yml
+# STUB — CI for easefin-web.
+# Runs lint + build on every PR and push to main. Add tests when they exist.
+# Once this runs green, add it as a required status check in the branch
+# protection rule for main (Settings → Branches).
+
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build

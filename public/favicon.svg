@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER favicon — replace with the real EaseFin AI logo SVG.
+     Simple "E" mark in the brand green so the tab icon isn't broken
+     while waiting on the brand asset from Michelle/Bhavya. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#14532d"/>
+  <path d="M10 8h13v4h-8v2.5h7v4h-7V20h8v4H10z" fill="#f97316"/>
+</svg>

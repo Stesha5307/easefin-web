@@ -1,0 +1,65 @@
+{
+"name": "RemittanceCountry",
+"type": "object",
+"properties": {
+"country": {
+"type": "string",
+"enum": [
+"india",
+"pakistan",
+"bangladesh",
+"oman",
+"uae",
+"kuwait",
+"qatar",
+"bahrain",
+"saudi-arabia"
+],
+"description": "Country name in slug format"
+},
+"currency_code": {
+
+
+
+"type": "string",
+"description": "ISO currency code"
+},
+"currency_name": {
+"type": "string",
+"description": "Currency name"
+},
+"usd_rate_local": {
+"type": "number",
+"description": "Local currency units per 1 USD (e.g., 1 USD = 83 INR => 83)"
+},
+"typical_bank_fee_percent_avg": {
+"type": "number",
+"description": "Typical average bank fee percent for international money transfer"
+},
+"typical_bank_fee_percent_range": {
+"type": "string",
+"description": "Typical bank fee percent range (e.g., 0.5%\u20132.0%)"
+},
+"popular_banks": {
+"type": "array",
+"items": {
+"type": "string"
+},
+"description": "Common banks used for remittances"
+},
+"notes": {
+"type": "string",
+"description": "Extra notes about fees or FX"
+},
+"last_updated": {
+"type": "string",
+"format": "date",
+"description": "Date these values were last reviewed"
+}
+},
+"required": [
+"country",
+"currency_code",
+"usd_rate_local"
+]
+}

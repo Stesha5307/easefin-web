@@ -1,0 +1,30 @@
+{
+"name": "SiteSettings",
+"type": "object",
+"properties": {
+"product_video_url": {
+"type": "string",
+"description": "URL of the product video (YouTube/Vimeo or direct file URL)"
+},
+"product_video_provider": {
+"type": "string",
+"enum": [
+"auto",
+"youtube",
+"vimeo",
+"file"
+],
+"default": "auto",
+"description": "Preferred video provider or auto-detect"
+},
+"product_video_title": {
+"type": "string",
+"description": "Title shown above the product video"
+},
+"product_video_description": {
+"type": "string",
+"description": "Short description under the title"
+}
+},
+"required": []
+}
